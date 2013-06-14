@@ -1,0 +1,15 @@
+[user]
+	email = masch@masch.it
+	name = Mark Schmale
+[color]
+	diff = auto
+	ui = yes
+[pager]
+    diff = 
+[alias]
+	co = checkout
+	ci = commit
+	cm = commit -m
+	st = status -sb
+[push]
+	default = simple
