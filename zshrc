@@ -16,6 +16,8 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+set nosharedhistory
+
 export PATH=~/bin/:$PATH
 
 [[ -e ~/.login ]] &&  . ~/.login
