@@ -1,26 +1,43 @@
-call pathogen#infect()
 
+set nocompatible
 filetype off
 set rtp+=~/.dotfiles/vim/bundle/vundle/
 call vundle#rc()
+syntax on
 
 Bundle 'gmarik/vundle'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'tpope/vim-fugitive'
+Bundle 'altercation/vim-colors-solarized'
+Bundle 'scrooloose/syntastic'
+Bundle 'bling/vim-airline'
+set laststatus=2
+let g:airline_section_c='%{fugitive#statusline()}'
 
 filetype plugin indent on
-set rtp+=~/.dotfiles/vim/bundle/powerline/powerline/bindings/vim
-
-let g:Powerline_symbols = 'fancy'
 
 " Bubble single lines
-nmap <C-Up> ddkP
-nmap <C-Down> ddp
+nnoremap <C-Up> ddkP
+nnoremap <C-Down> ddp
 " Bubble multiple lines
-vmap <C-Up> xkP`[V`]
-vmap <C-Down> xp`[V`]
-"
-wincmd p 
+vnoremap <C-Up> xkP`[V`]
+vnoremap <C-Down> xp`[V`]
+
+
+" safe für blöde
+cnoremap w!! w !sudo tee % >/dev/null
 
 set shiftwidth=2
 set tabstop=2
 set softtabstop=2
+
+" space für auf- UND zuklappen
+nnoremap <space> za
+
+" we <3 utf8
+set encoding=utf-8
+set fileencoding=utf-8
+
+set directory=/tmp
+
+set background=dark
+colorscheme solarized

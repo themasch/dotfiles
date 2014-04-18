@@ -18,7 +18,7 @@ source $ZSH/oh-my-zsh.sh
 
 set nosharedhistory
 
-export PATH=~/bin/:$PATH
+export PATH=~/npm/bin:~/bin/:$PATH
 
 [[ -e ~/.login ]] &&  . ~/.login
 [[ -e ~/.zshrc.local ]] && . ~/.zshrc.local
