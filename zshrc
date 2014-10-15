@@ -15,11 +15,15 @@ plugins=(git npm lol)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+zstyle ':completion:*:sudo::' environ PATH="/sbin:/usr/sbin:$PATH" HOME="/root"
 
 set nosharedhistory
 
 export PATH=~/npm/bin:~/bin/:$PATH
 
+function fcd() {
+  command mkdir -p "$@" && cd "$@" 
+}
 [[ -e ~/.login ]] &&  . ~/.login
 [[ -e ~/.zshrc.local ]] && . ~/.zshrc.local
 
