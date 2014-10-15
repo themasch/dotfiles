@@ -17,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # Customize to your needs...
 zstyle ':completion:*:sudo::' environ PATH="/sbin:/usr/sbin:$PATH" HOME="/root"
 
-set nosharedhistory
+unsetopt share_history
 
 export PATH=~/npm/bin:~/bin/:$PATH
 
