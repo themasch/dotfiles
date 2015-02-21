@@ -7,7 +7,6 @@ set runtimepath+=~/.dotfiles/vim/bundle/neobundle.vim/
 
 call neobundle#begin(expand('~/.dotfiles/vim/bundle'))
 NeoBundleFetch 'Shougo/neobundle.vim'
-NeoBundle 'gmarik/vundle'
 NeoBundle 'tpope/vim-fugitive'
 NeoBundle 'altercation/vim-colors-solarized'
 NeoBundle 'scrooloose/syntastic'
