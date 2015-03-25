@@ -24,6 +24,7 @@ unsetopt share_history
 
 export PATH=~/npm/bin:~/bin/:$PATH
 
+. ~/.dotfiles/nvm/nvm.sh
 [[ -e ~/.login ]] &&  . ~/.login
 [[ -e ~/.zshrc.local ]] && . ~/.zshrc.local
 
