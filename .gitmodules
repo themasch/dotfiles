@@ -7,4 +7,4 @@
 	url = git://github.com/Shougo/neobundle.vim
 [submodule "nvm"]
 	path = nvm
-	url = git@github.com:creationix/nvm.git
+	url = git://github.com/creationix/nvm.git
