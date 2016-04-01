@@ -7,7 +7,7 @@ ZSH_THEME="kphoen"
 DISABLE_AUTO_UPDATE="true"
 
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git npm lol extract)
+plugins=(git npm lol extract symfony2)
 
 [[ -e ~/.zshcfg ]] && . ~/.zshcfg
 
